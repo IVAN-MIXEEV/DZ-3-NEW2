@@ -30,14 +30,18 @@ public class Main {
         byte sheetsForEach = (byte) (paperOne / totalStudents);
         System.out.println("На каждого ученика рассчитано " + sheetsForEach + " листов бумаги.");
 //№4
-        short twentyMinutes = 8 * 20;
-        short oneDay = 8 * 1440;
-        int threeDays = 8 * 4320;
-        int oneMonth = 8 * 43200;
+        int oneMinutesBottle = 16 / 2;
+        int oneDay = 24 * 60;
+        int threeDay = oneDay * 3;
+        int oneMonth = oneDay * 30;
+        int twentyMinutes = oneMinutesBottle * 20;
+        int oneDayBottle = oneMinutesBottle * oneDay;
+        int threeDaysBottle = oneMinutesBottle * threeDay;
+        int oneMonthBottle = oneMinutesBottle * oneMonth;
         System.out.println("За 20 минут машина произвела " + twentyMinutes + " штук бутылок.");
-        System.out.println("За сутки машина произвела " + oneDay + " штук бутылок.");
-        System.out.println("За 3 дня машина произвела " + threeDays + " штук бутылок.");
-        System.out.println("За месяц машина произвела " + oneMonth + " штук бутылок.");
+        System.out.println("За сутки машина произвела " + oneDayBottle + " штук бутылок.");
+        System.out.println("За 3 дня машина произвела " + threeDaysBottle + " штук бутылок.");
+        System.out.println("За месяц машина произвела " + oneMonthBottle + " штук бутылок.");
 //№5
         int totalCansOfPaint = 120;
         int whitePaintOneClass = 2;
@@ -65,18 +69,18 @@ public class Main {
         System.out.println("Для похудения на 7 килограмм по 500 грамм в день, спортсмену потребуется " + weightMinus500 + " дней");
         System.out.println("В среднем спортсмену для похудения на 7 килограмм потребуется " + average + " день");
 //№8
-        int masha = 74536;
-        int denis = 92059;
-        int kristina = 83853;
+        int masha = (int) (67760 * 1.1);
+        int denis = (int) (83690 * 1.1);
+        int kristina = (int) (76230 * 1.1);
         System.out.println("Маша теперь получает " + masha + " рублей в месяц.");
         System.out.println("Денис теперь получает " + denis + " рублей в месяц. ");
         System.out.println("Кристина теперь получает " + kristina + " рублей в месяц. ");
         int mashaYear = 67760 * 12;
         int denisYear = 83690 * 12;
         int kristinaYear = 76230 * 12;
-        int mashaYearNew = 74536 * 12;
-        int denisYearNew = 92059 * 12;
-        int kristinaYearNew = 83853 * 12;
+        int mashaYearNew = (int) (mashaYear * 1.1);
+        int denisYearNew = (int) (denisYear * 1.1);
+        int kristinaYearNew = (int) (kristinaYear * 1.1);
         int defferenceMashaYear = mashaYearNew - mashaYear;
         int defferenceDenisYear = denisYearNew - denisYear;
         int defferenceKristinaYear = kristinaYearNew - kristinaYear;
